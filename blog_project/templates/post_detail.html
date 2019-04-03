@@ -5,5 +5,9 @@
         <h2>{{ object.title }} </h2>
         <p> {{ object.body }} </p>
     </div>
-
+ <!-- ссылка на изменения постов -->   
+<a href="{% url 'post_edit' post.pk %}"> +edit block Post </a>
+<br>
+<!-- ссылка для удаления поста -->
+<a href="{% url 'post_delete' post.pk %}"> +delete blog Post </a>
 {% endblock content %}
