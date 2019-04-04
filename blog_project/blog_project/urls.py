@@ -18,6 +18,7 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('accounts/', include('django.contrib.auth.urls')),     # ссылка аккаунт
-    path('', include('blog.urls')),
+    path('accounts/', include('django.contrib.auth.urls')),     # new inside accounts
+ #   path('accounts/', include(accounts.url)),                   # new app accounts
+    path('', include('blog.urls')),                             # new
 ]
